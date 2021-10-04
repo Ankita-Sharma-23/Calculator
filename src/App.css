@@ -1,38 +1,87 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Lobster&family=Open+Sans:wght@700&display=swap");
+
+* {
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App {
+  width: 363px;
+  height: 90vh;
+  background: black;
   color: white;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+.top {
+  height: 50px;
+  padding: 0 20px;
+}
+.display {
+  font-size: 80px;
+  margin-bottom: 20px;
+  font-weight: 80;
+  text-align: right;
+  align-items: center;
+}
+.display1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 80;
+  text-align: right;
+  align-items: center;
+}
+.buttons {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+button {
+  height: 60px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: rgb(255, 249, 249);
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+  box-shadow: inset 0 0 0 1px rgb(255, 243, 243), inset 0 1px 0 0 rgb(255, 255, 255), inset 0 -1px 0 0 rgb(255, 255, 255), 0 1px 0 0 rgba(255,255,255,.15);
+  text-shadow: 0 1px rgb(255, 255, 255);
+  border-radius: 0%;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #5a6699;
+}
+.equal-sign {
+  background-color:green;
+  border-color: green;
+  color: #fff;
+  height: 100%;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.equal-sign:hover {
+  background-color: #4e9ed4;
 }
+.equal-clc{
+  background-color:orange;
+}
+.operator{
+  color: orange;
+}
+
