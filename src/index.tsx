@@ -5,15 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import store from './store';
 
-// const initState:any={
-//   results:0,
-//   stores:null,
-//   operators:null,
-// }
-
-// const store=createStore (reducer,initState)
-// console.log(store)
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

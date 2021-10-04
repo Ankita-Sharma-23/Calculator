@@ -2,7 +2,6 @@ import React from "react";
 import { connect, useDispatch } from "react-redux";
 import AppState from "../Interfaces/state.interface"
 import { addElem, clear, equal} from '../Actions/calcAction'
-import { expression } from "mathjs";
 
 const Calculator = (props: any) => {
   const dispatch = useDispatch();

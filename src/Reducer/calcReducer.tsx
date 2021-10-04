@@ -1,5 +1,4 @@
 
-import { expression } from 'mathjs';
 import { CalcState } from '../Interfaces/calcReducer.interface';
 
 const initialState: CalcState = {
